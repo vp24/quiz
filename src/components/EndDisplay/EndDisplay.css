@@ -1,0 +1,33 @@
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid;
+    flex-direction: column;
+    padding: 5px;
+    line-height: 5%;
+}   
+
+.results-container{
+    border: solid;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.toStartScreenButton{
+    margin-bottom: 10px;
+}
+
+.rightAnswer{
+    color: #1100ff;
+    border: solid;
+    border-color: black;
+    line-height: 33%;
+}
+
+.wrongAnswer{
+    color: rgb(255, 0, 0);
+    border: solid;
+    border-color: black;
+    line-height: 33%;
+}
