@@ -39,6 +39,7 @@ class App extends React.Component {
 
 
 
+
   startButton = () => {
     this.setState({
       inputValue: '',
@@ -55,8 +56,10 @@ class App extends React.Component {
       showStartPage: false,
       toStartPage: false
     }, this.setNums());
+
     const interval = setInterval(() => {
-      //console.log('This will run every second!');
+
+      console.log('This will run every second!');
 
       if(this.state.maxQuestionNumber+1 > this.state.currentQuestionNumber && this.state.timeCurrentlyDowning === true){
       this.setState(prevState => ({
@@ -89,11 +92,13 @@ class App extends React.Component {
       this.ifAnswerCorrect();
       this.pushInData();
       this.setNums();
+      console.log('right answer entered');
     }
     else if(this.state.answerNum != this.state.inputValue){
       this.ifAnswerIncorrect();
       this.pushInData();
       this.setNums();
+      console.log('wrong answer entered');
   }
   event.target.reset();
 }
@@ -211,11 +216,6 @@ class App extends React.Component {
   handleChange = (event) => {
     this.setState({inputValue: event.target.value});
   }
-
-
-  componentDidMount(){
-  }
-
   
 
 
