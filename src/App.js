@@ -230,7 +230,7 @@ class App extends React.Component {
           <div className ='mainQuizDetail'>
       <Timer countdownTimer = {this.state.countdownTimer}/>
       <ShowQuestion whichOperation = {this.state.whichOperation} firstNum = {this.state.firstNum} secondNum = {this.state.secondNum}/>
-      <SubmitBox handleSubmitAnswer = {this.handleSubmitAnswer} handleChange = {this.handleChange}/>
+      <SubmitBox handleSubmitAnswer = {this.handleSubmitAnswer} handleChange = {this.handleChange} inputValue = {this.state.inputValue}/>
           </div>
         </div> : null}
 
